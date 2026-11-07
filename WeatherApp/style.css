@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 20px;
+
+    background: linear-gradient(135deg, #6C8EF5, #A78BFA);
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ALL MAIN BOX */
+
+.mainBox {
+    height: 500px;
+    width: 250px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, #4F7DF3, #7C5CE6);
+
+    color: white;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+
+/* ========================= */
+/* FIRST WEATHER START BOX */
+/* ========================= */
+
+.startBox {
+    height: 500px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* FIRST BOX IMAGE */
+
+.startImage {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* FIRST BOX CONTENT */
+
+.startContent {
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* FIRST BOX HEADING */
+
+.startContent h1 {
+    font-size: 30px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+
+/* START BUTTON */
+
+.startContent button {
+    margin-top: 20px;
+
+    padding: 10px 30px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: white;
+
+    color: #4F7DF3;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+}
+
+
+/* ========================= */
+/* WEATHER FORECAST BOX */
+/* ========================= */
+
+.mainBox2 {
+    padding: 20px;
+}
+
+
+/* SEARCH BOX */
+
+.searchBox {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+}
+
+
+/* SEARCH INPUT */
+
+#inputfield {
+    width: 85%;
+    height: 40px;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 20px;
+
+    outline: none;
+
+    text-align: center;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* SEARCH ICON */
+
+#searchIcon {
+    width: 25px;
+    height: 25px;
+
+    object-fit: contain;
+
+    margin-top: 10px;
+}
+
+
+/* WEATHER ICON BOX */
+
+.iconBox {
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+
+/* WEATHER IMAGE */
+
+#icon {
+    width: 80px;
+    height: 80px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+}
+
+
+/* DESCRIPTION */
+
+.iconBox p {
+    margin-top: 5px;
+
+    font-size: 13px;
+}
+
+
+/* ========================= */
+/* TEMPERATURE */
+/* ========================= */
+
+.tempBox {
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+
+.tempBox h1 {
+    font-size: 40px;
+
+    font-weight: 600;
+}
+
+
+.tempBox h3 {
+    font-size: 18px;
+
+    font-weight: 400;
+}
+
+
+/* ========================= */
+/* EXTRA DETAILS */
+/* ========================= */
+
+.extradetails {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    margin-top: 25px;
+}
+
+
+/* WIND & HUMIDITY */
+
+.wind,
+.humidity {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* WIND & HUMIDITY IMAGE */
+
+#windIcon,
+#humidityIcon {
+    width: 35px;
+    height: 35px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+
+/* DATA */
+
+.windData,
+.humidityData {
+    text-align: center;
+
+    font-size: 12px;
+}
+
+
+/* ========================= */
+/* 404 BOX */
+/* ========================= */
+
+.errorBox {
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* 404 NUMBER */
+
+.errorBox h1 {
+    font-size: 60px;
+}
+
+
+/* 404 TEXT */
+
+.errorBox p {
+    font-size: 14px;
+
+    margin-top: 5px;
+}
+
+
+/* INFORMATION */
+
+#info {
+    margin-top: 10px;
+
+    font-size: 12px;
+
+    text-align: center;
+}
+
+
+/* 404 BUTTON */
+
+.errorBox button {
+    margin-top: 20px;
+
+    padding: 10px 30px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: white;
+
+    color: #4F7DF3;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+}
+
