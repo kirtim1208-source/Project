@@ -4,67 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body> 
-       <!-- Start Screen -->
-    <div class="mainBox startBox">
 
-    <img src="/WeatherApp/drizzle.jpg" class="startImage">
+<body>
 
-    <div class="startContent">
-        <h1>Weather</h1>
-        <h1>ForeCasts</h1>
+    <div class="container">
 
-        <button>Start</button>
+        <h1>🌤 Weather App</h1>
+        <p class="subtitle">Check your city's weather</p>
+
+        <div class="search-box">
+            <input type="text" id="cityInput"
+                placeholder="Enter city name">
+
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <p id="message"></p>
+
+        <div class="weather-card" id="weatherCard">
+
+            <div class="weather-icon" id="weatherIcon">🌤️</div>
+
+            <h2 id="cityName">City Name</h2>
+
+            <h1 id="temperature">--°C</h1>
+
+            <p id="description">Weather Condition</p>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <h3>💧</h3>
+                    <p>Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+
+                <div class="detail">
+                    <h3>💨</h3>
+                    <p>Wind Speed</p>
+                    <h3 id="wind">-- km/h</h3>
+                </div>
+
+                <div class="detail">
+                    <h3>🌡️</h3>
+                    <p>Feels Like</p>
+                    <h3 id="feelsLike">--°C</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            Made with ❤️ using HTML, CSS & JavaScript
+        </footer>
+
     </div>
 
-</div>
-      <!-- Weather Screen -->
-     <div class="mainBox mainBox2">
-        <div class="searchBox">
-            <input type="text" placeholder="Enter your city" id="inputfield">
-             <img src="/WeatherApp/search.png" id="searchIcon">
-      <!-- Weather Icon -->
-      <div class="iconBox">
-            <img src="/WeatherApp/clear.jpg" id="icon">
-            <p>Description</p>
-            <!-- Temperature -->
-       </div>
-         <div class="tempBox">
-            <h1 id="temp">0°C</h1>
-            <h3 id="city">New York</h3>
-         </div>
-
-         <!-- Extra Details -->
-         <div class="extradetails">
-            <div class="wind">
-                <img src="/WeatherApp/wind.jpg" id="windIcon">
-                <div class="windData">
-                    <p id="windSpeed">0km/h</p>
-                    <P>Wind</P>
-                </div>
-            </div>
-            <div class="humidity">
-                <img src="/WeatherApp/humidity.jpg" id="humidityIcon">
-                <div class="humidityData">
-                    <p id="humidityper">0%</p>
-                    <P>humidity</P>
-                </div>
-            </div>
-         </div>
-        </div>
-     </div>
-      <div class="mainBox">
-
-        <H1>404</H1>
-        <P>Oops! Page Not Found</P>
-        <P id="info">The page you're looking for doesn't exist or has been moved</P>
-        <button>Go Home</button>
-      </div>
     <script src="app.js"></script>
+
 </body>
 </html>
